@@ -9,7 +9,7 @@ def register():
 
         if email=="anu@gmail.com":
             return f"""
-            <h2>Registration Successful"</h>
+            <h2>Registration Successful!!!"</h>
             <p>Name:{name}</p>
             <p>Email:{email}</p>
             <p>Event:{event}</p>
