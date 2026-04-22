@@ -11,7 +11,7 @@ pipeline {
         stage('Run App') {
             steps {
                 bat 'python app.py'
-                bat 'echo App build successful!'
+                timeout(time: 60, unit: 'SECONDS')
             }
         }
     }
