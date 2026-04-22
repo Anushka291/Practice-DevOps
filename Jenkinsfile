@@ -12,6 +12,7 @@ pipeline {
             steps {
                 timeout(time: 60, unit: 'SECONDS') {
                     bat 'python app.py'
+                }
         }
     }
 }
