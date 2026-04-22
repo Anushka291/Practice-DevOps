@@ -10,9 +10,10 @@ pipeline {
 
         stage('Run App') {
             steps {
-                bat 'python app.py'
-                timeout(time: 60, unit: 'SECONDS')
-            }
+                timeout(time: 60, unit: 'SECONDS') {
+                    bat 'python app.py'
         }
     }
 }
+
+
